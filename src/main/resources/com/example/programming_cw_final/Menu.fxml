@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="650.0" prefWidth="650.0" spacing="20.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.programming_cw_final.ApplicationController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <AnchorPane prefHeight="645.0" prefWidth="610.0">
+        <children>
+         <ImageView fitHeight="610.0" fitWidth="627.0">
+            <image>
+               <Image url="@backgroundImage2.png" />
+            </image>
+         </ImageView>
+            <Label fx:id="welcomeText1" layoutX="314.0" layoutY="85.0" text="Menu" textFill="WHITE">
+                <font>
+                    <Font name="Arial Black" size="18.0" />
+                </font>
+            </Label>
+            <Label fx:id="welcomeText111" layoutX="151.0" layoutY="129.0" text="Add Drivers Details" textFill="WHITE">
+                <font>
+                    <Font name="Calibri Bold" size="13.0" />
+                </font>
+            </Label>
+            <Label fx:id="welcomeText1112" layoutX="151.0" layoutY="166.0" text="Delete" textFill="WHITE">
+                <font>
+                    <Font name="Calibri Bold" size="13.0" />
+                </font>
+            </Label>
+            <Label fx:id="welcomeText11121" layoutX="151.0" layoutY="211.0" text="Update Driver Details" textFill="WHITE">
+                <font>
+                    <Font name="Calibri Bold" size="13.0" />
+                </font>
+            </Label>
+            <Label fx:id="welcomeText111211" layoutX="153.0" layoutY="259.0" text="View Rally Cross Champion Table" textFill="WHITE">
+                <font>
+                    <Font name="Calibri Bold" size="13.0" />
+                </font>
+            </Label>
+            <Label fx:id="welcomeText1112111" layoutX="153.0" layoutY="500.0" text="Exit program" textFill="WHITE">
+                <font>
+                    <Font name="Calibri Bold" size="13.0" />
+                </font>
+            </Label>
+            <Label fx:id="welcomeText11121111" layoutX="153.0" layoutY="454.0" text="Load data from the text file" textFill="WHITE">
+                <font>
+                    <Font name="Calibri Bold" size="13.0" />
+                </font>
+            </Label>
+            <Label fx:id="welcomeText111211111" layoutX="156.0" layoutY="408.0" text="Save the current data to text file" textFill="WHITE">
+                <font>
+                    <Font name="Calibri Bold" size="13.0" />
+                </font>
+            </Label>
+            <Label fx:id="welcomeText1112111111" layoutX="156.0" layoutY="358.0" text="View Race Tables" textFill="WHITE">
+                <font>
+                    <Font name="Calibri Bold" size="13.0" />
+                </font>
+            </Label>
+            <Label fx:id="welcomeText11121111111" layoutX="153.0" layoutY="310.0" text="Simulate a random race" textFill="WHITE">
+                <font>
+                    <Font name="Calibri Bold" size="13.0" />
+                </font>
+            </Label>
+            <Button fx:id="AddButton" defaultButton="true" layoutX="443.0" layoutY="112.0" minHeight="25.0" minWidth="117.0" mnemonicParsing="false" onAction="#onAddButtonClick" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: #5d0e8f;" text="ADD" textFill="WHITE" wrapText="true">
+                <padding>
+                    <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                </padding>
+                <font>
+                    <Font name="System Bold Italic" size="14.0" />
+                </font>
+            </Button>
+            <Button fx:id="DeleteBuddon" defaultButton="true" layoutX="443.0" layoutY="162.0" minWidth="117.0" mnemonicParsing="false" onAction="#onDDDButtonClick" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: #5d0e8f;" text="DDD" textFill="WHITE">
+                <font>
+                    <Font name="System Bold Italic" size="14.0" />
+                </font>
+            </Button>
+            <Button fx:id="UpdateButton" defaultButton="true" layoutX="443.0" layoutY="207.0" minHeight="25.0" minWidth="117.0" mnemonicParsing="false" onAction="#onUDDButtonClick" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: #5d0e8f;" text="UDD" textFill="WHITE">
+                <font>
+                    <Font name="System Bold Italic" size="14.0" />
+                </font>
+            </Button>
+            <Button fx:id="VctButton" defaultButton="true" layoutX="445.0" layoutY="255.0" minHeight="25.0" minWidth="117.0" mnemonicParsing="false" onAction="#onVCTButtonClick" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: #5d0e8f;" text="VCT" textFill="WHITE">
+                <font>
+                    <Font name="System Bold Italic" size="14.0" />
+                </font>
+            </Button>
+            <Button fx:id="SrrButton" defaultButton="true" layoutX="445.0" layoutY="306.0" minHeight="25.0" minWidth="117.0" mnemonicParsing="false" onAction="#onSRRButtonClick" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: #5d0e8f;" text="SRR" textFill="WHITE">
+                <font>
+                    <Font name="System Bold Italic" size="14.0" />
+                </font>
+            </Button>
+            <Button fx:id="VrlButton" defaultButton="true" layoutX="445.0" layoutY="354.0" minHeight="25.0" minWidth="117.0" mnemonicParsing="false" onAction="#onVRLButtonClick" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: #5d0e8f;" text="VRL" textFill="WHITE">
+                <font>
+                    <Font name="System Bold Italic" size="14.0" />
+                </font>
+            </Button>
+            <Button fx:id="StfButton" defaultButton="true" layoutX="445.0" layoutY="404.0" minHeight="25.0" minWidth="117.0" mnemonicParsing="false" onAction="#onSTFButtonClick" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: #5d0e8f;" text="STF" textFill="WHITE">
+                <font>
+                    <Font name="System Bold Italic" size="14.0" />
+                </font>
+            </Button>
+            <Button fx:id="RffButton" defaultButton="true" layoutX="445.0" layoutY="450.0" minHeight="25.0" minWidth="117.0" mnemonicParsing="false" onAction="#onRFFButtonClick" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: #5d0e8f;" text="RFF" textFill="WHITE">
+                <font>
+                    <Font name="System Bold Italic" size="14.0" />
+                </font>
+            </Button>
+            <Button fx:id="ExitButton" defaultButton="true" layoutX="445.0" layoutY="496.0" minHeight="25.0" minWidth="117.0" mnemonicParsing="false" onAction="#onESCButtonClick" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: #5d0e8f;" text="ESC" textFill="WHITE">
+                <font>
+                    <Font name="System Bold Italic" size="14.0" />
+                </font>
+            </Button>
+      
+          <Label fx:id="welcomeText" layoutX="156.0" layoutY="41.0" text="Welcome To Rally Cross Championship 2023" textFill="#854de6">
+              <font>
+                  <Font name="Agency FB Bold" size="24.0" />
+              </font>
+         </Label>
+        </children>
+        <effect>
+            <Blend mode="DARKEN" opacity="0.7" />
+        </effect>
+    </AnchorPane>
+</VBox>

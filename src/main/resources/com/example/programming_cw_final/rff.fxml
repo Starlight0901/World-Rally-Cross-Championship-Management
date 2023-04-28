@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="650.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.programming_cw_final.ApplicationController">
+   <children>
+      <AnchorPane prefHeight="665.0" prefWidth="650.0">
+         <children>
+            <ImageView fitHeight="650.0" fitWidth="642.0">
+               <image>
+                  <Image url="@backgroundImage2.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="rffBackToMenu" defaultButton="true" layoutX="44.0" layoutY="590.0" mnemonicParsing="false" onAction="#onRFFBackToMenuClick" style="-fx-background-color: #854de6;" text="Back To Menu" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Label fx:id="displayRFF" layoutX="40.0" layoutY="169.0" prefHeight="279.0" prefWidth="580.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Button defaultButton="true" layoutX="44.0" layoutY="117.0" mnemonicParsing="false" onAction="#onRFFLoadDataButtonClick" prefHeight="29.0" prefWidth="111.0" style="-fx-background-color: #854de6;" text="Load data" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Label fx:id="rffFileErrorMsg" layoutX="200.0" layoutY="59.0" prefHeight="44.0" prefWidth="209.0" text="View Data in File" textFill="#854de6">
+               <font>
+                  <Font name="Agency FB Bold" size="36.0" />
+               </font>
+            </Label>
+            <Button defaultButton="true" layoutX="134.0" layoutY="503.0" mnemonicParsing="false" onAction="#onRFFUpdateButtonClick" prefHeight="29.0" prefWidth="98.0" style="-fx-background-color: #854de6;" text="Update" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button defaultButton="true" layoutX="309.0" layoutY="503.0" mnemonicParsing="false" onAction="#onRFFDeleteButtonClick" prefHeight="29.0" prefWidth="86.0" style="-fx-background-color: #854de6;" text="Delete" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button defaultButton="true" layoutX="467.0" layoutY="503.0" mnemonicParsing="false" onAction="#onRFFSaveButtonClick" prefHeight="29.0" prefWidth="113.0" style="-fx-background-color: #854de6;" text="Save changes" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+   </children>
+</VBox>

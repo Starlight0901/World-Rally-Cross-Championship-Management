@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="650.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.programming_cw_final.RandomRaceTableController">
+   <children>
+      <AnchorPane prefHeight="650.0" prefWidth="650.0">
+         <children>
+            <ImageView fitHeight="650.0" fitWidth="650.0">
+               <image>
+                  <Image url="@backgroundImage2.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="srrBackToMenu" defaultButton="true" layoutX="52.0" layoutY="575.0" mnemonicParsing="false" onAction="#onSRRBackToMenuClick" prefHeight="29.0" prefWidth="136.0" style="-fx-background-color: #854de6;" text="Back To Menu" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Label layoutX="176.0" layoutY="76.0" prefHeight="17.0" prefWidth="336.0" text="Simulating Random Race" textFill="#854de6">
+               <font>
+                  <Font name="Agency FB Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="enterDate" layoutX="83.0" layoutY="215.0" prefHeight="32.0" prefWidth="302.0" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="enterLocation" layoutX="401.0" layoutY="213.0" prefHeight="32.0" prefWidth="217.0" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB Bold" size="18.0" />
+               </font>
+            </Label>
+            <TableView fx:id="srrTable" layoutX="124.0" layoutY="267.0" prefHeight="200.0" prefWidth="398.0">
+              <columns>
+                <TableColumn fx:id="srrPosition" prefWidth="83.18092346191406" text="Position" />
+                <TableColumn fx:id="srrName" prefWidth="171.31912231445312" text="Name" />
+                  <TableColumn fx:id="srrPoints" prefWidth="92.67245483398438" text="Scores" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="650.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.programming_cw_final.ApplicationController">
+   <children>
+      <AnchorPane prefHeight="687.0" prefWidth="650.0">
+         <children>
+            <ImageView fitHeight="650.0" fitWidth="650.0">
+               <image>
+                  <Image url="@backgroundImage2.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="stfBackToMenu" defaultButton="true" layoutX="58.0" layoutY="489.0" mnemonicParsing="false" onAction="#onSTFBackToMenuClick" style="-fx-background-color: #854de6;" text="Back To Menu" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Label layoutX="89.0" layoutY="105.0" text="Save the details of Drivers to a text file" textFill="#854de6">
+               <font>
+                  <Font name="Agency FB Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="saveDataMsg" layoutX="114.0" layoutY="253.0" prefHeight="44.0" prefWidth="414.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="stfFileErrorMsg" layoutX="163.0" layoutY="192.0" prefHeight="44.0" prefWidth="330.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button defaultButton="true" layoutX="275.0" layoutY="350.0" mnemonicParsing="false" onAction="#onSaveToButtonClick" style="-fx-background-color: #854de6;" text="Save Details" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Button defaultButton="true" layoutX="58.0" layoutY="535.0" mnemonicParsing="false" onAction="#onSTFBackToRFFClick" prefHeight="29.0" prefWidth="113.0" style="-fx-background-color: #854de6;" text="Back To RFF" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

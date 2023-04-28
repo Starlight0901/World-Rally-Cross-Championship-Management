@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="650.0" prefWidth="650.0" spacing="20.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.programming_cw_final.ApplicationController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <AnchorPane prefHeight="664.0" prefWidth="610.0">
+        <children>
+         <ImageView fitHeight="610.0" fitWidth="610.0">
+            <image>
+               <Image url="@backgroundImage2.png" />
+            </image>
+         </ImageView>
+            <Label layoutX="107.0" layoutY="238.0" text="Name :" textFill="WHITE">
+                <font>
+                    <Font name="System Bold" size="14.0" />
+                </font>
+            </Label>
+            <Label layoutX="104.0" layoutY="295.0" text="Age :" textFill="WHITE">
+                <font>
+                    <Font name="System Bold" size="14.0" />
+                </font>
+            </Label>
+            <Label layoutX="107.0" layoutY="348.0" text="Team : " textFill="WHITE">
+                <font>
+                    <Font name="System Bold" size="14.0" />
+                </font>
+            </Label>
+            <Label layoutX="106.0" layoutY="401.0" text="Car :" textFill="WHITE">
+                <font>
+                    <Font name="System Bold" size="14.0" />
+                </font>
+            </Label>
+            <Label layoutX="106.0" layoutY="449.0" text="Points :" textFill="WHITE">
+                <font>
+                    <Font name="System Bold" size="14.0" />
+                </font>
+            </Label>
+            <TextField fx:id="name" layoutX="204.0" layoutY="235.0" prefHeight="25.0" prefWidth="330.0" promptText="Enter Name" />
+            <TextField fx:id="age" layoutX="204.0" layoutY="293.0" prefHeight="25.0" prefWidth="101.0" promptText="Enter Age" />
+            <TextField fx:id="team" layoutX="204.0" layoutY="345.0" prefHeight="25.0" prefWidth="330.0" promptText="Enter Team name" />
+            <TextField fx:id="car" layoutX="204.0" layoutY="398.0" prefHeight="25.0" prefWidth="330.0" promptText="Enter the name of the car" />
+            <TextField fx:id="points" layoutX="204.0" layoutY="447.0" prefHeight="25.0" prefWidth="101.0" promptText="Points" />
+            <Button fx:id="addButton" defaultButton="true" layoutX="443.0" layoutY="544.0" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="29.0" prefWidth="79.0" style="-fx-background-color: #854de6;" text="ADD" textFill="WHITE">
+                <font>
+                    <Font name="System Bold" size="14.0" />
+                </font>
+            </Button>
+
+            <Label fx:id="AddDriverDetails" layoutX="186.0" layoutY="100.0" text="Add Drivers Details" textFill="#854de6">
+                <font>
+                    <Font name="Agency FB Bold" size="36.0" />
+                </font>
+            </Label>
+            <Label fx:id="dataInsertionMsg" layoutX="140.0" layoutY="182.0" prefHeight="17.0" prefWidth="330.0" textFill="RED" />
+            <Label fx:id="addedDetails" layoutX="121.0" layoutY="486.0" prefHeight="50.0" prefWidth="344.0" textFill="WHITE">
+                <font>
+                    <Font name="Times New Roman Bold" size="14.0" />
+                </font>
+            </Label>
+         <Button fx:id="AddToMenuButton" defaultButton="true" layoutX="32.0" layoutY="549.0" mnemonicParsing="false" onAction="#onAddToMenuButtonClick" style="-fx-background-color: #854de6;" text="Back To Menu" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font>
+         </Button>
+        </children>
+    </AnchorPane>
+</VBox>

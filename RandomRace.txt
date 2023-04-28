@@ -1,0 +1,15 @@
+	 	 	 	 	 Random Race for the month of May 
+	 Date: 2023 May 9	 	 	 Location: Nyirád
+Position: 1	 	Scores: 10	 	Name: Thor
+Position: 2	 	Scores: 7	 	Name: Steve
+Position: 3	 	Scores: 5	 	Name: Bruce
+	 	 	 	 	 Random Race for the month of May 
+	 Date: 2023 May 4	 	 	 Location: Rīga
+Position: 1	 	Scores: 10	 	Name: Thor
+Position: 2	 	Scores: 7	 	Name: Steve
+Position: 3	 	Scores: 5	 	Name: Bruce
+	 	 	 	 	 Random Race for the month of May 
+	 Date: 2023 May 26	 	 	 Location: Höljes
+Position: 1	 	Scores: 10	 	Name: Steve
+Position: 2	 	Scores: 7	 	Name: Thor
+Position: 3	 	Scores: 5	 	Name: Bruce
